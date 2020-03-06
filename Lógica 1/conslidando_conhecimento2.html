@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<script>
+
+//função pulalinha + mostra
+
+function pulaLinha (){
+
+	document.write("<br><br><br>");
+}
+
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+function sorteia (n){
+
+	return Math.round(Math.random() * n);
+}
+
+//criar uma FUNÇÃO informando a diferença de idade das pessoas
+//mostrar ao usuario: quando errou, quando acertou e se o chute dele era maior ou menor ao numero do prgrama.
+
+
+var chute = parseInt(prompt("Informe um numero"));
+var numeroPensado = sorteia(10);
+
+if (chute == numeroPensado){
+	mostra("Parabéns, você acertou")
+}
+
+if (chute != numeroPensado && chute > numeroPensado){
+	mostra("você errou, e seu numero é maior que sorteado")
+}	
+
+if (chute != numeroPensado && chute < numeroPensado){
+	mostra("você errou, e seu numero é menor que sorteado")
+}	
+
+
+mostra("o numero sorteado foi: " + numeroPensado);
+mostra("o numero do chute foi: " + chute);
+
+</script>

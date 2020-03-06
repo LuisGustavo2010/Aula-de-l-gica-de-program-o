@@ -1,0 +1,28 @@
+<meta charset = "UTF - 8">
+
+<input/>
+<button>"Revisão"</button>
+
+<script>
+
+var segredo = Math.random(Math.round()*10);
+var input = document.querySelector("input");
+input.focus()
+
+function imprimirResposta(){
+	
+	if(input.value == segredo){
+		alert("ACERTOU!");
+	}else{
+		alert("ERROU!!");
+	}
+
+input.value = "";
+input.focus();
+
+}
+
+var button = document.querySelector("button");
+	button.onclick = imprimirResposta;
+
+</script>

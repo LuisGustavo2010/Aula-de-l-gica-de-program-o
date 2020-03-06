@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+	
+var login = 1;
+var senha = 1;
+
+var tentativaMaxima = 3;
+var tentativaAtual = 1;
+
+while (tentativaAtual <= tentativaAtual){
+
+	var loginUtilizado = prompt("informe seu login");
+	var senhaUtilizada = prompt("informe sua senha");
+
+	if (loginUtilizado == login && senhaUtilizada == senha){
+		alert("Bem vindo" + login);
+		tentativaAtual=tentativaMaxima
+		
+	}else{
+		if(tentativaAtual == tentativaMaxima){
+			alert("Numero limite atingido");
+		}else{
+			alert("login invalido tente novamente")
+		}
+	} tentativaAtual = tentativaAtual +1
+}
+
+
+</script>

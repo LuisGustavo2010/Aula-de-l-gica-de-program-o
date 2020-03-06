@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+
+<script>
+
+//função pulalinha + mostra
+
+function pulaLinha (){
+
+	document.write("<br><br><br>");
+}
+
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+function calculaImc(peso,altura){
+
+	return peso/(altura*altura); 
+}
+
+function calculaIdade(data1, data2){
+
+	return data1 - data2;
+
+}
+
+//Calculo IMC pelo prompt
+var nome = prompt("Digite seu nome: ");
+var peso = prompt( nome + " ,Digite seu peso: ");
+var altura = prompt( nome + " ,Digite sua altura: ");
+var imc = Math.round(calculaImc(peso, altura));
+
+//Calculo Ano de nascimento pelo prompt
+var anoNascimento = prompt( nome + " ,Digite o ano que nasecu: ");
+var anoAtual = 2020;
+var calculaIdade = anoAtual - anoNascimento;
+
+mostra("Olá, " + nome + " ,Seu IMC é: " + imc);
+mostra("Olá, " + nome + " ,Sua idade é: " + calculaIdade);
+
+</script>

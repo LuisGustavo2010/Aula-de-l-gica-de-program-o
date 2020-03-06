@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+
+<script>
+
+//função pulalinha + mostra
+
+function pulaLinha (){
+
+	document.write("<br><br><br>");
+}
+
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+//Math.round = o Javascript arredonda os valores.
+//Math.random = O Javascript fornece um numero aleatório (Multiplica-se por 10 para torna-lo 2x casas decimais)
+
+// incrementar código , adicionando 3x chances para o usuario c/ while
+
+var numeroPensado = 4 //Math.round(Math.random()* 10);
+
+var tentativas = 1;
+var max = 3;
+
+while(tentativas <= max){
+
+	var chute = parseInt(prompt("Digite o seu chute: "));
+
+		if(chute==numeroPensado){
+
+			mostra("Parabéns, ACERTOU!");
+			break; // interrompe o loop imediatamente
+			//tentativas==max;
+
+		}else{
+
+			mostra("Você ERROU o numero que pensei era: " + numeroPensado);
+		
+		}
+
+		tentativas++
+}
+
+mostra("fim")
+
+</script>

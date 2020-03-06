@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+	function calculaImc(peso,altura){
+
+		return peso / (altura * altura);
+
+
+	}
+
+	var imcLuis		 = Math.round(calculaImc (112 , 1.80));
+	var imcCarlos 	 = Math.round(calculaImc (100 , 1.90));
+	var imcTotal = imcCarlos + imcLuis;
+
+
+	mostra("O IMC de Luis é: " + imcLuis);
+	mostra("O IMC de Carlos é: " + imcCarlos);
+	mostra("O IMC dos 2 é: " + imcTotal);
+</script>

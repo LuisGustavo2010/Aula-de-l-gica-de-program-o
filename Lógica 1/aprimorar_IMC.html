@@ -1,0 +1,68 @@
+<meta charset="utf-8">
+
+<script>
+
+//função pulalinha + mostra
+
+function pulaLinha (){
+
+	document.write("<br><br><br>");
+}
+
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+function calculaImc(peso,altura){
+
+	return peso/(altura*altura); 
+}
+
+
+//Calculo IMC pelo prompt
+var nome = prompt("Digite seu nome: ");
+var peso = prompt( nome + " ,Digite seu peso: ");
+var altura = prompt( nome + " ,Digite sua altura: ");
+var imc = Math.round(calculaImc(peso, altura));
+
+mostra("Olá, " + nome + " ,Seu IMC é: " + imc);
+
+// 18.5 = abaixo
+// > 35 = alto
+// entre 18.5 e 35 = média
+
+if (imc < 18.5){
+
+	mostra( "Resultado: " + nome + " ,Você está abaixo do recomendado.");
+
+}
+
+if (imc > 35){
+
+	mostra( "Resultado: " + nome + " ,Você está acima do recomendado.");
+
+}
+
+//forma mais inteligente de utilizar mais de um IF (Utiliza-se dois & comerciais " && ")
+
+if (imc >= 18.5 && imc <= 35){
+
+	mostra( "Resultado: " + nome + " ,Você está com IMC excelente.");
+}
+
+//primeiro jeito de fazer, porem mais longo de escrever
+//if (imc >= 18.5){
+
+	//if(imc <= 35){
+
+		//mostra( "Resultado: " + nome + " ,Você está com IMC excelente.");
+	//}
+
+
+//}
+
+
+</script>

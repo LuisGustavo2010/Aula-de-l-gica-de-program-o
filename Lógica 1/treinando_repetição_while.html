@@ -1,0 +1,30 @@
+<meta charset = "utf-8">
+
+<script> 
+
+function	pulaLinha(){
+
+	document.write("<br><br>");
+}
+
+function	mostrar(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+//programa ira calcular datas com base na informação que o usuario definir
+
+var definidoUsuario = parseInt(prompt("entre com a data limite"))
+var inicioCopa = 1930
+var tempo = 4
+
+while (inicioCopa <= definidoUsuario){
+
+	mostrar("Teve copa em: " + inicioCopa)
+	inicioCopa = inicioCopa + tempo
+}
+
+mostrar("FIM");
+
+</script>

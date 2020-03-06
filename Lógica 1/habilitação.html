@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script>
+
+//função pulalinha + mostra
+
+function pulaLinha (){
+
+	document.write("<br><br><br>");
+}
+
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+//montar programa com cirtérios para saber quem pode e não pode dirigir
+
+var idade = parseInt(prompt("Qual a sua idade ?"));
+var cnh = prompt("Possui CNH ? Responsa S ou N");
+
+if (idade >= 18 && cnh == "S"){
+
+	mostra("Você pode dirigir");
+} else {
+	mostra("Você não pode dirigir!")
+}
+
+</script>

@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+
+
+var numeroPensado = Math.round(Math.random()*10);
+var tentativas = 0;
+var maxTentativas = 4;
+
+while (tentativas <= maxTentativas){
+
+	var chute = parseInt(prompt("Informe um numero: "));
+	if (chute == numeroPensado){
+		document.write("<br>Parabens, acertou!<br>");
+		break;
+	}else{
+		document.write("<br>Você Errou!<br>");
+	}tentativas++
+}
+
+document.write("<br>F I M");
+
+</script>

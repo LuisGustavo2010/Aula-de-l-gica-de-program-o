@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<br>
+<h1> Desafio de 0 a 100 mostrando numeros pares</h1>
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br><br>")
+	}
+
+	function mostrar(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+var inicio = 0
+var limite = 100
+var contador = 2
+
+while (inicio <= limite){
+	mostrar("Este numero é par de 1 " + inicio);
+	inicio = inicio + contador;
+}
+
+mostrar(" F I M ");
+
+
+</script>

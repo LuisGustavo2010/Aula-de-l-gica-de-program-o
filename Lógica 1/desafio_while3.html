@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<br>
+<h1> Desafio: Mostrando numeros entre 30 a 40 sem mostrar o 33 e 37</h1>
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br><br>")
+	}
+
+	function mostrar(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+var i = 30
+var ii = 34
+var iii = 38
+
+while (i < 33){
+	mostrar("o valor é: " + i)
+		i = i + 1
+			if (i == 33){
+				mostrar(" vazio ");
+			}
+}
+
+while (ii < 37){
+	mostrar("o valor é: " + ii)
+		ii = ii + 1
+			if (ii == 37){
+				mostrar(" vazio ");
+			}
+}
+
+while (iii < 41){
+	mostrar("o valor é: " + iii)
+		iii = iii + 1
+}
+
+mostrar(" F I M ");
+
+</script>

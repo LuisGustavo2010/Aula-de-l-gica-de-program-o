@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+
+//função pulalinha + mostra
+
+function pulaLinha (){
+
+	document.write("<br>");
+}
+
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+//escrever em 3x linhas ditintas 10 asteriscos (*)
+
+//for imprime um "*" em 3x linhas distintas
+for (var linha =1; linha <= 3; linha++){
+	//for imprime um "*" em 10 colunas
+	for(var coluna =1;coluna <= 10;coluna++){
+		document.write("*");
+	}
+	pulaLinha();
+}
+
+</script>

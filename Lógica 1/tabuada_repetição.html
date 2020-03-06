@@ -1,0 +1,39 @@
+<meta charset = "utf-8">
+
+<script> 
+
+function	pulaLinha(){
+
+	document.write("<br><br>");
+}
+
+function	mostrar(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+//tabuada do 7 com for e com while
+// o comando ++ representa a somatoria de +1 na variavel, otimiza tempo e escrita no código
+
+mostrar("Abaixo tabuada do 4 com laço de repetição FOR: <br>");
+
+for (var mult = 1; mult <= 10; mult++){
+	mostrar(4*mult);
+}
+
+mostrar("<h1>fim</h1>");
+
+
+mostrar("Abaixo tabuada do 4 com laço de repetição WHILE: <br>");
+var multiplicador = 1;
+
+while (multiplicador <= 10){
+	mostrar(10* multiplicador);
+	multiplicador++;
+}
+
+mostrar("<h1>fim</h1>");
+
+
+</script>

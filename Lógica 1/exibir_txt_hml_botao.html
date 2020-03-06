@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+
+<!- inserir a caixa de txt para usu + botão que imprimira o valor do input->
+<input/>
+<button>"Imprimir txt do input"</button>
+
+<!-iniciar o mundo JS->
+<script>
+	var input = document.querySelector("input");
+
+	function exibirtxt(frase){
+		alert(input.value);
+	}
+
+	var button = document.querySelector("button");
+		button.onclick = exibirtxt;
+
+</script>

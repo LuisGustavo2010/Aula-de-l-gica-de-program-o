@@ -1,0 +1,44 @@
+<script>
+
+// este programa interage com o usu, solicitando idades de familiares e imprimindo a média delas
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+}
+//definido a pergunta p interagir c usurio
+var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+//var numero serve para contagem
+var numero = 1;
+
+//var totalIdades serve para acumular os valores das idades
+var totalIdades = 0;
+
+//repita até que o valor da variavel numero seje menor ou igual a variavel totalFamiliares
+while(numero <= totalFamiliares) {
+
+	//interage com o usu solicitando a idade dos familiares
+    var idade = parseInt(prompt("Informe idade do familiar"));
+    //acumula o total de idades informadas
+    totalIdades = totalIdades + idade;
+    //soma-se +1 na variavel numero
+    numero++;
+
+}
+//criada a variavel que apresentara a média das idades, com base nos valores acumulados na var totalIdades
+var mediaDasIdades = totalIdades/totalFamiliares
+//imprime a média
+mostra("A média das idades dos familiares é " + mediaDasIdades);
+//imprime o FIM
+mostra("FIM");
+
+</script>

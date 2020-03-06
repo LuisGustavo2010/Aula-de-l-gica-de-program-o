@@ -1,0 +1,28 @@
+<meta charset = "utf-8">
+
+<input/>
+
+<button>"clika aki fio"</button>
+
+<script>
+	var segredo = Math.random(Math.round()*10);
+	var input = document.querySelector("input");
+	input.focus();
+	
+	function	verificar(){
+		if (input.value == segredo){
+			alert("parabéns!");
+		}else{
+			if (input.value != segredo){
+				alert("ERROU!");
+			}
+		}
+		input.value = "";
+		input.focus();
+	}
+
+
+var button = document.querySelector("button");
+			button.onclick = verificar;
+
+</script>
